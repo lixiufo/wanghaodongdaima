@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="delStu1" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="delStu1"/>
+			<item value="Stuname"/>
+			<item value="toString"/>
+			<item value="0099a"/>
+			<item value="-1"/>
+			<item value="id"/>
+			<item value="enctype=&quot;multipart/form-data&quot;"/>
+			<item value="System"/>
+			<item value="goodsName"/>
+			<item value="商品名称"/>
+			<item value="showName"/>
+			<item value="checkNameByJquery()"/>
+			<item value="checkStuName()"/>
+			<item value="退出"/>
+			<item value="商品描述"/>
+		</list>
+		<list key="replacehistory">
+			<item value="asd"/>
+			<item value="a"/>
+			<item value="p"/>
+			<item value="Asd"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="391" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="497" key="DIALOG_HEIGHT"/>
+		<item value="1262" key="DIALOG_X_ORIGIN"/>
+		<item value="156" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

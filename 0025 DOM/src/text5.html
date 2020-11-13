@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+		<script type="text/javascript">
+			/*
+				插入目标元素的位置	 
+				elt.insertBefore(newNode, childNode);			添加到elt中，childNode之前。
+				注意： elt必须是childNode的直接父节点。
+					
+				删除指定的子节点	
+				elt.removeChild(child)							
+				注意： elt必须是child的直接父节点。
+				
+			*/
+			
+			//添加附件
+			function addFile() {
+				//获取表格节点对象
+				var table = document.getElementsByTagName("table")[0];
+				//创建tr标签节点对象
+				var trnode = document.createElement("tr");
+				trnode.innerHTML = "<td><input type='file'/></td><td><a href='#' onclick='del(this)'>删除附件</a></td>";
+				/*	var	tdnode1=document.createElement("td");
+					var	tdnode2=document.createElement("td");
+					tdnode1.innerHTML="<input type='file'/>";
+					tdnode2.innerHTML="<a href='#'>删除附件</a>";	
+					trnode.appendChild(tdnode1);
+					trnode.appendChild(tdnode2);*/
+				//table.appendChild(trnode);
+				
+				//获取父节点对象
+				var tbody = document.getElementsByTagName("tbody")[0];
+				//获取要插入的子节点
+				var lastrow = document.getElementById("lastrow");
+				//添加数据
+				tbody.insertBefore(trnode, lastrow);
+			}
+
+			//删除附件
+			function del(delfile) {
+				//获取父节点对象
+				var tbody = document.getElementsByTagName("tbody")[0];
+				//获取要删除的tr标签节点对象
+				var del = delfile.parentNode.parentNode;
+				//删除数据
+				tbody.removeChild(del);
+			}
+		</script>
+
+</head>
+<body>
+        <table>
+			<tbody>
+				<tr>
+					<td><input type="file" /></td>
+					<td><a href="#" onclick="del(this)">删除附件</a></td>
+				</tr>
+
+				<tr id="lastrow">
+					<td colspan="2"><input onclick="addFile()" type="button" value="添加附件" /></td>
+				</tr>
+			</tbody>
+        </table>
+
+</body>
+</html>

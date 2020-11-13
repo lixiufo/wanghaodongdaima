@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body onload="eat()">
+		<center>
+			<span id="food"></span><br/>
+			<input type="button" style="font-size: 50px;" value="暂停" onclick="stop()"/>
+			<input type="button" style="font-size: 50px;" value="继续" onclick="star()"/>
+		</center>
+	</body>
+<script type="text/javascript">
+			function eat() {
+				var arr = ["盖浇饭", "油泼面", "米皮","兰州拉面"];
+				//随机获取下标
+				var index = Math.floor(Math.random() * arr.length);
+				//获取数组中具体的数据
+				var code = arr[index];
+				var spanNode = document.getElementById("food");
+				spanNode.innerHTML = code;
+				//操作css样式
+				spanNode.style.fontSize = "124px";
+				spanNode.style.color = "red";
+				spanNode.style.backgroundColor = "yellow";
+			}
+			
+			var id = setInterval("eat()",100);
+			
+			function stop(){clearInterval(id);}
+			function star(){location.reload();}
+				
+			
+			
+		</script>
+
+
+</html>

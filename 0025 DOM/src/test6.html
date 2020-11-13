@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+			function showCity() {
+				//维护一个二维数组存储省份对应的城市
+				var citys = [[],["洛阳", "郑州", "三门峡"],["青岛", "日照", "烟台"],["广州", "汕头"]];
+				//获取省份对应的节点
+				var provinceNodes = document.getElementById("province");
+				//获取省份选中的选项
+				var index = provinceNodes.selectedIndex;
+				//获取对应的城市
+				var datas = citys[index];
+				//找到city节点
+				var citynode = document.getElementById("city");
+				//先清空city框所有option
+				var citychild = citynode.childNodes;
+				for (var i = 0; i < citychild.length;) {
+					citynode.removeChild(citychild[i]);
+				}
+				//设置options的个数。
+				//citynode.options.length = 1;
+				//遍历对应的所有城市然后创建对应的option添加到city上。
+				for (var i = 0; i < datas.length; i++) {
+					var op = document.createElement("option");
+					op.innerHTML = datas[i];
+					citynode.appendChild(op);
+				}
+			}
+		</script>
+
+
+</head>
+<body>
+省份<select id="province" onchange="showCity()">
+    		<option>省份</option>
+    		<option>河南</option>
+            <option>山东</option>
+            <option>广东</option>
+    	</select> 
+		城市<select id="city">
+		<option>城市</option>
+	</select>
+
+
+</body>
+</html>

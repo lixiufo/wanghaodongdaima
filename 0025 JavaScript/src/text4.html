@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/* document.write("向上取整:"+Math.ceil(57.1)+"<br/>");
+document.write("向下取整:"+Math.floor(57.1)+"<br/>");
+document.write("随机数:"+Math.random(57.1)*100+"<br/>");
+document.write("四舍五入:"+Math.round(57.1)+"<br/>"); */
+
+/* var a=new Array();
+
+var c=new Array("a","b","c");
+var d=new Array("d","e","f");
+var e=["g","h","l"];
+var b=new Array(10);
+b[100] = 10;
+document.write("b长度：" + b.length + "<br/>");
+document.write(e); */
+
+/* 
+var arr2 = new Array("狗娃", "狗剩", "铁蛋");
+arr2 = ["狗娃", "狗剩", "铁蛋", "张三"];
+document.write("arr2长度：" + arr2.length + "<br/>"); */
+
+var arr1 = ["狗娃", "狗剩", "铁蛋"];
+//pop ：移除数组中的最后一个元素并返回该元素。
+/* document.write("删除最后的一个元素并返回："+arr1.pop()+"<br/>");
+document.write(arr1.push("大坏蛋")+"<br/>");
+document.write(arr1.reverse()+"<br/>");
+document.write("删除第一个元素并返回："+arr1.shift()+"<br/>");  */
+
+/* function Person(){}
+var p = new Person(); //创建了一个Person对象了
+p.id = 110;
+p.name = "狗娃";
+document.write(p.name+"<br/>");
+document.write(p.id); */
+
+
+function Person(id,name){
+	this.id = id;
+	this.name = name;	
+  	this.say = function(){
+		alert(name+"呵呵");	 
+	} 
+}
+
+var p = new Person(110,"狗剩");	//创建对象
+document.write(p.name+"<br/>");
+document.write(p.id+"<br/>");
+p.say();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function setUserName(){
+	var a=document.getElementById("username");
+		a.value="李秀佛";
+	}
+	
+function setImgs(){
+	//通过class属性获取标签对象（返回的是一个数组）
+	var imgNodes= document.getElementsByClassName("imgs");
+	
+	for(var i= 0;i<imgNodes.length;i++){
+		imgNodes[i].src="2.jpg";
+		imgNodes[i].width = 200;
+		imgNodes[i].height = 200;
+	}
+}
+
+function setDivs(){
+	//通过标签名获取标签对象（返回的是一个数组）
+	var divNodes= document.getElementsByTagName("div");
+	for(var i= 0;i<divNodes.length;i++){
+		divNodes[i].innerHTML = "金国领是大坏蛋".fontcolor("red");
+	}
+}
+
+function setSpans(){
+	//通过name属性获取标签对象（返回的是一个数组）
+	var spanNodes= document.getElementsByName("span");
+	
+	for(var i= 0;i<spanNodes.length;i++){
+		spanNodes[i].innerHTML = "毋自扬是好人".fontcolor("blue");
+	}
+}
+
+
+</script>
+</head>
+<body>
+
+用户名：<input type="text" id="username" />
+		<input type="button" value="设置用户名" onclick="setUserName()" />
+		<hr>
+		
+		<img src="" alt="这是图片1" />
+		<img src="" alt="这是图片2" class="imgs" />
+		<img src="" alt="这是图片3" class="imgs" />
+		<input type="button" value="设置图片" onclick="setImgs()" />
+		<hr>
+		
+		<div>div1</div>
+		<div>div2</div>
+		<div>div3</div>
+		<input type="button" value="设置div" onclick="setDivs()" />
+		<hr>
+		
+		<span name="span">span1</span>
+		<span name="span">span2</span>
+		<span name="span">span3</span>
+		<input type="button" value="设置span" onclick="setSpans()" />
+		<hr>
+
+</body>
+</html>

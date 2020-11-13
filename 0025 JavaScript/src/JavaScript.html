@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/* alert("大坏蛋");
+document.write("数据");
+confirm("你要干嘛"); */
+/* prompt("好的，名字");
+document.write("今天学习js") */
+/* var a=2;
+alert(typeof a);
+alert(typeof 42.2);
+alert(typeof as);
+alert(typeof "as"); */
+/* alert(typeof true);
+alert(typeof a); */
+/* var a="12sd12";
+alert(parseInt (a)); */
+
+/* alert(isNaN(23));
+alert(isNaN("abc"));
+document.write(20<15? "成立":"不成立") */
+/* document.write(isNaN(123) ); */
+
+/* 
+if("20"){
+	alert("成立");
+}else{
+	alert("不成立");
+} */
+
+/* if("abc"){
+	alert("成立");
+}else{
+	alert("不成立");
+} */
+
+/* if(null){
+	alert("成立");
+}else{
+	alert("不成立");
+} */
+
+/* if(undefined){
+	alert("成立");
+}else{
+	alert("不成立");
+} */
+
+
+/* document.write((false||false)+"<br/>"); */
+/* var workAge = 0;
+			var str ="";
+			var b;
+			if(str){
+				document.write("明天过来面试！！");
+			}else{
+				document.write("不要在投我们公司了，lj 不要你！");	
+			} */
+			
+			
+			
+/* 	switch(new Date().getDay()){
+		case 1:
+	 document.write("今天是周一") ;
+			break;
+		case 2:
+			alert("今天是周二");
+			break;
+		case 3:
+			alert("今天是周三");
+			break;
+		case 4:
+			alert("今天是周四");
+			break;
+			default:
+				alert("其他时间");
+			break;
+	}  */
+</script>
+<!-- <script type="text/javascript" src="erwq.js">
+</script> -->
+
+
+<script type="text/javascript">
+function showDay(){
+var a=document.getElementById("month");
+var month=a.value;
+if(month==1||month==3||month==5||month==7||month==8||month==10||month==12){
+				alert("本月是31天");	
+			}else if(month==4||month==6||month==9||month==11){
+				alert("本月是30天");	
+			}else if(month==2){
+				alert("本月是28天");
+	}else{
+				alert("没有该月份");	
+			}}
+</script>
+
+<!-- <script type="text/javascript">
+var date=new Date();
+document.write(date.getMonth()+1+"<br>");
+document.write(date.getFullYear()+"<br>");
+</script> -->
+</head>
+<body>
+
+ <input type="text" id="month"/>
+<input type="button" value="查询  "  onclick="showDay()"/>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

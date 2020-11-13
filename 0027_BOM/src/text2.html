@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+        <input type="button" value="单击" onclick="Testonclick()" />
+		<input type="button" value="双击" ondblclick="Testondblclick()" />
+		<input type="button" value="按下鼠标" onmousedown="Testonmousedown()" />
+		<input type="button" value="释放鼠标" onmouseup="Testonmouseup()" />
+		<input type="button" value="显示时间" onmousemove="Testonmousemove()" onmouseout="Testonmouseout()" />
+		<span id="time"></span>
+		<hr>
+		用户名:<input type="text" id="username" name="username" onfocus="Testonfocus()" onblur="Testonblur()" />
+		<span id="user"></span>
+		密码:<input type="password" name="password"  />
+		<select onchange="Testonchange()">
+			<option>上海</option>
+			<option>北京</option>
+			<option>深圳</option>
+		</select>
+		<form action="ad.html" onsubmit="Testonsubmit()">
+			<input type="submit" />
+		</form>
+</body>
+<script>
+		function Testonsubmit(){alert("表单将要被提交..")}
+		function Testonchange(){alert("城市变了..")}
+		
+		function Testonblur(){
+			var usernameNode = document.getElementById("username");
+			var username = usernameNode.value;
+			if(username.length<=6){
+				document.getElementById("user").innerHTML  = "用户名长度不足六位".fontcolor("red");}	}
+	
+		function Testonfocus(){
+			document.getElementById("user").innerHTML = "用户名长度必须大于六位".fontcolor("green");	}
+		
+		//function showPage(){document.write("page");}
+		function Testonclick(){alert("单击");}
+		function Testondblclick(){alert("双击");}
+		function Testonmousedown(){alert("按下鼠标");}
+		function Testonmouseup(){alert("释放鼠标");}
+		function Testonmousemove(){	document.getElementById("time").innerHTML = new Date().toLocaleString();}
+		function Testonmouseout(){document.getElementById("time").innerHTML = "";	}
+</script>
+</body>
+</html>

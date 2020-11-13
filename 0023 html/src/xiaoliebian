@@ -1,0 +1,60 @@
+
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=Cache-Control content="no-cache, no-store, must-revalidate"><meta http-equiv=Pragma content=no-cache><meta http-equiv=Expires content=0><meta http-equiv=Content-Disposition content=attachment;><meta name=keyword content=小裂变，涨粉，裂变，裂变营销，微信社群营销，公众号任务宝，任务宝,公众号涨粉,公众号裂变,裂变,裂变宝,粉丝宝,微信涨粉,微信裂变,小裂变,粉丝营销,微信商城运营,积分宝,任务宝,灵通宝,微分销,营销插件,小程序,分销宝,公众号增粉,分享宝,微店,增粉,微信营销,微信推广,互动营销,微店运营,微信运营专家,微信运营管家><title>小裂变|裂变系统</title><link rel="shortcut icon" type=image/x-icon href=./static/liebian/favicon.ico><style type=text/css>.ant-pagination-item-active a {
+      color: #DE1F26 !important;
+    }
+    .ant-spin-lg .ant-spin-dot{
+      width: 32px !important;
+    }
+    .ant-table-pagination.ant-pagination {
+      display: none
+    }</style><script src=./static/lib/md5.js></script><script type=text/javascript>(function() {
+          if (window.zhuge) return;
+          window.zhuge = [];
+          window.zhuge.methods = "_init identify track trackRevenue getDid getSid getKey setSuperProperty setUserProperties setWxProperties setPlatform".split(" ");
+          window.zhuge.factory = function(b) {
+              return function() {
+                  var a = Array.prototype.slice.call(arguments);
+                  a.unshift(b);
+                  window.zhuge.push(a);
+                  return window.zhuge;
+              }
+          };
+          for (var i = 0; i < window.zhuge.methods.length; i++) {
+              var key = window.zhuge.methods[i];
+              window.zhuge[key] = window.zhuge.factory(key);
+          }
+          window.zhuge.load = function(b, x) {
+              if (!document.getElementById("zhuge-js")) {
+                  var a = document.createElement("script");
+                  var verDate = new Date();
+                  var verStr = verDate.getFullYear().toString() + verDate.getMonth().toString() + verDate.getDate().toString();
+
+                  a.type = "text/javascript";
+                  a.id = "zhuge-js";
+                  a.async = !0;
+                  a.src = 'https://zgsdk.zhugeio.com/zhuge.min.js?v=' + verStr;
+                  a.onerror = function() {
+                      window.zhuge.identify = window.zhuge.track = function(ename, props, callback) {
+                          if(callback && Object.prototype.toString.call(callback) === '[object Function]') {
+                              callback();
+                          } else if (Object.prototype.toString.call(props) === '[object Function]') {
+                              props();
+                          }
+                      };
+                  };
+                  var c = document.getElementsByTagName("script")[0];
+                  c.parentNode.insertBefore(a, c);
+                  window.zhuge._init(b, x)
+              }
+          };
+          window.zhuge.load('8e330d5a670a4c4a8166b7f3c5aabf9f', { //配置应用的AppKey
+              superProperty: { //全局的事件属性(选填)
+                  '应用名称': '诸葛io'
+              },
+              adTrack: false,//广告监测开关，默认为false
+              zgsee: false,//视屏采集开关， 默认为false
+              autoTrack: false,
+              //启用全埋点采集（选填，默认false）
+              singlePage: false //是否是单页面应用（SPA），启用autoTrack后生效（选填，默认false）
+          });
+      })();</script><link href=./static/css/app.c2f7151c6547d917aee00bb5cdba56b8.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.20e5f00c7b5a4af6222c.js></script><script type=text/javascript src=./static/js/app.62073e12d6580e76304a.js></script></body></html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+			function Testopen(){
+				window.open("ad.html","_blank","location=no,toolbar=no");}
+			function TestresizeTo(){
+				window.resizeTo("400","400");	}
+			function TestmoveTo(){
+				window.moveTo("500","200");}
+			function TestmoveBy(){
+				for(var i=0;i<100;i++){
+					window.moveBy(50,0);//右移
+					window.moveBy(0,50);//下移
+					window.moveBy(-50,0);//左移
+					window.moveBy(0,-50);//上移
+				}}
+			var id = window.setInterval("Testopen()",3000);
+			function TestclearInterval(){
+				window.clearInterval(asd);    }
+			window.setTimeout("Testopen()",1000);
+</script>
+</head>
+<body>
+		<input type="button" value="打开" onclick="Testopen()" />
+		<input type="button" value="指定宽度与高度" onclick="TestresizeTo()" />
+		<input type="button" value="从左上角移动" onclick="TestmoveTo()" />
+		<input type="button" value="相对于原来的窗口移动" onclick="TestmoveBy()" />
+		<input type="button" value="清除定时器" onclick="TestclearInterval()" />
+</body>
+</html>

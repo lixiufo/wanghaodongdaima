@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="4" key="DIALOG_X_ORIGIN"/>
+		<item value="4" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="EditorSelectionDialog">
+		<item value="true" key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL"/>
+		<item value=".jsp" key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION"/>
+		<item value="C:\Users\Administrator\AppData\Local\Google\Chrome\Application\chrome.exe" key="EditorSelectionDialog.STORE_ID_DESCR"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="925" key="dialogHeight"/>
+		<item value="1156" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
+			<item value="org.eclipse.jst.ejb.ui"/>
+			<item value="org.eclipse.buildship.ui.creationwizards"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.jst.j2ee.internal"/>
+			<item value="org.eclipse.emf.codegen.ui.JETNewWizards"/>
+			<item value="org.eclipse.wst.jsdt.ui.java"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+	</section>
+	<section name="FileSystemImportWizard">
+	</section>
+	<section name="ZipFileExportWizard">
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\Administrator\Desktop\新建文件夹 (7)\1907-李秀佛-exam4.zip"/>
+			<item value="C:\Users\Administrator\Desktop\新建文件夹 (5)\李秀佛.zip"/>
+			<item value="C:\Users\Administrator\Desktop\新建文件夹 (2)\李秀佛.zip"/>
+			<item value="C:\Users\Administrator\Desktop\新建文件夹 (2)\lixiufo.zip"/>
+			<item value="C:\Users\Administrator\Desktop\新建文件夹 (7)\1907-李秀佛-exam1.zip"/>
+			<item value="C:\Users\Administrator\Desktop\新建文件夹\1907-李秀佛exam3.zip"/>
+		</list>
+	</section>
+</section>

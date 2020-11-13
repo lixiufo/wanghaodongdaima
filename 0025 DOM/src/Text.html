@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function setImg(){
+			var allImgNodes = document.images;
+			for(var i= 0;i<allImgNodes.length;i++){
+				allImgNodes[i].src="2.jpg";
+				allImgNodes[i].width = 200;
+				allImgNodes[i].height = 200;
+			}
+		}
+		function setA(){
+			var aNodes = document.links;
+			for(var i= 0;i<aNodes.length;i++){
+				aNodes[i].href="http://www.baidu.com";
+			}
+		}
+</script>
+</head>
+<body>
+		<img src="" alt="这是图片" />
+		<img src="" alt="这是图片" />
+		<img src="" alt="这是图片" />
+		
+		<input type="button" value="设置图片" onclick="setImg()" />
+		
+		<a href="#">百度1</a>
+		<a href="#">百度2</a>
+		<a href="#">百度3</a>
+		
+		<input type="button" value="打开网页连接" onclick="setA()" />
+
+</body>
+</html>

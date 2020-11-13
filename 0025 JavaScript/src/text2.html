@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+		function showTime(clock){
+			var date=new Date();
+			var a=date.getFullYear();
+			var b=date.getMonth();
+			var c=date.getDate();
+			var d=date.getHours();
+			var e=date.getMinutes();
+			var f=date.getSeconds();
+			var timeInfo=f;
+			clock.innerHTML=timeInfo;
+		}
+		
+		function stillShow(){
+			//定时器  第一个参数是调用的方法 
+			//第二个参数是 每个1秒钟调用一次  毫秒单位 
+			window.setInterval(function(){showTime(clock)},1000);
+		}
+		//当这个窗口加载完毕以后 调用 stillshow()方法
+		window.onload=stillShow();
+	
+		</script>
+</head>
+<body>
+	<span id="clock"></span>
+</body>
+</html>

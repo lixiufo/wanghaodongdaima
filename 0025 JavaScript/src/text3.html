@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	
+</head>
+<body>
+<span id="time"></span>
+<script type="text/javascript">
+function getCurrentTime() {
+	var date=new Date();
+	var timeInfo=("当前时间是：" + date.getFullYear() + "年" + (date.getMonth() + 1) + "月" + date.getDate() + "日 " +
+	date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()); 
+	var spanObj = document.getElementById("time");
+	spanObj.innerHTML = timeInfo.fontcolor("green");
+	spanObj.innerHTML = ("你在做什么");
+}
+window.setInterval("getCurrentTime()", 1000); 
+
+alert(confirm("确认删除吗?"));
+
+//alert(prompt("请输入你的名字"));
+alert(alert(confirm("确认删除吗?")))
+
+
+</script>
+	
+</body>
+</html>

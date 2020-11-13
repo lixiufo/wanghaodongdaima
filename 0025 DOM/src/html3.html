@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var bodyNode = document.getElementsByTagName("body")[0];
+//查看父节点
+var parentNode = bodyNode.parentNode;
+var childNodes =bodyNode.childNodes
+var firstChild=	bodyNode.firstChild
+ var lastChild=bodyNode.lastChild
+
+document.write("父节点的名称：" + parentNode.nodeName+"<br/>");   /*  对的 */
+ document.write("子节点的名称：" + childNodes.nodeName+"<br/>");
+document.write("第一个子节点的名称：" + firstChild.nodeName+"<br/>");
+document.write("最后一个子点的名称：" + lastChild. nodeName+"<br/>"); 
+document.write("第一个子节点：" + bodyNode.firstChild.nodeName);
+
+document.write("<br />");
+
+</script>
+</body>
+</html>

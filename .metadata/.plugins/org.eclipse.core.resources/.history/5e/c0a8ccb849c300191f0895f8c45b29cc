@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var citynode = document.getElementById("city");
+				//先清空city框所有option
+			document.write( citynode.childNodes.nodeName);
+				</script>
+</head>
+<body>
+  	</select> 
+		城市<select id="city">
+		<option>城市</option>
+	</select>
+</body>
+</html>
